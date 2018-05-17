@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CET-B7-cis">
-                                <rect key="frame" x="16" y="40" width="343" height="96.5"/>
+                                <rect key="frame" x="16" y="36" width="343" height="444.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="509-g0-AKj">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -37,39 +37,55 @@
                                         <rect key="frame" x="0.0" y="66.5" width="343" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
                                         <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxj-Qa-CGs"/>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZg-a2-M19"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="yLk-bL-Pxj">
+                                        <rect key="frame" x="0.0" y="104.5" width="343" height="340"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pH7-aS-ce4" appends="YES" id="hX0-fi-kT3"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="FAq-om-oC9" firstAttribute="top" secondItem="509-g0-AKj" secondAttribute="bottom" constant="8" id="LoK-K3-Jnh"/>
-                                    <constraint firstItem="7md-e8-7hM" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="Q7x-Lq-EW3"/>
-                                    <constraint firstItem="7md-e8-7hM" firstAttribute="top" secondItem="FAq-om-oC9" secondAttribute="bottom" constant="8" id="Sho-r9-BPY"/>
-                                    <constraint firstItem="509-g0-AKj" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="TXK-2a-agK"/>
-                                    <constraint firstAttribute="trailing" secondItem="FAq-om-oC9" secondAttribute="trailing" id="X9M-fe-3Qf"/>
-                                    <constraint firstItem="509-g0-AKj" firstAttribute="top" secondItem="CET-B7-cis" secondAttribute="top" id="btC-74-0gC"/>
-                                    <constraint firstItem="FAq-om-oC9" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="d7c-gH-B8K"/>
-                                    <constraint firstAttribute="trailing" secondItem="509-g0-AKj" secondAttribute="trailing" id="eaj-Wl-kch"/>
-                                    <constraint firstAttribute="trailing" secondItem="7md-e8-7hM" secondAttribute="trailing" id="uBg-Yw-WIP"/>
+                                    <constraint firstAttribute="trailing" secondItem="7md-e8-7hM" secondAttribute="trailing" id="3yz-iO-INC"/>
+                                    <constraint firstAttribute="trailing" secondItem="FAq-om-oC9" secondAttribute="trailing" id="5xJ-Zn-F23"/>
+                                    <constraint firstItem="FAq-om-oC9" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="EoT-AK-Ga8"/>
+                                    <constraint firstItem="yLk-bL-Pxj" firstAttribute="top" secondItem="7md-e8-7hM" secondAttribute="bottom" constant="8" id="cBd-9Z-kiS"/>
+                                    <constraint firstAttribute="trailing" secondItem="yLk-bL-Pxj" secondAttribute="trailing" id="eKD-6Z-xfd"/>
+                                    <constraint firstItem="yLk-bL-Pxj" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="gFd-zn-DI0"/>
+                                    <constraint firstItem="7md-e8-7hM" firstAttribute="top" secondItem="FAq-om-oC9" secondAttribute="bottom" constant="8" id="ipy-y0-dMA"/>
+                                    <constraint firstItem="FAq-om-oC9" firstAttribute="top" secondItem="509-g0-AKj" secondAttribute="bottom" constant="8" id="rtk-BA-N5Q"/>
+                                    <constraint firstItem="7md-e8-7hM" firstAttribute="leading" secondItem="CET-B7-cis" secondAttribute="leading" id="sgZ-C6-m8R"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CET-B7-cis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7kp-HR-E6g"/>
-                            <constraint firstItem="CET-B7-cis" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MSN-Q8-azF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CET-B7-cis" secondAttribute="trailing" constant="16" id="uuV-gY-lCM"/>
+                            <constraint firstAttribute="trailing" secondItem="CET-B7-cis" secondAttribute="trailing" constant="16" id="PBr-Hy-Ytb"/>
+                            <constraint firstItem="CET-B7-cis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yF3-5O-nbd"/>
+                            <constraint firstItem="CET-B7-cis" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="z26-cB-Zk2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="509-g0-AKj" id="eNC-dp-Qyh"/>
                         <outlet property="nameTextField" destination="FAq-om-oC9" id="aGQ-O8-FXX"/>
+                        <outlet property="photoImageView" destination="yLk-bL-Pxj" id="WxY-Ss-5g4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pH7-aS-ce4">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="ujh-J9-fAv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_image" width="512" height="340"/>
+    </resources>
 </document>
