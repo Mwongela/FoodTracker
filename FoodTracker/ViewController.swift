@@ -59,12 +59,16 @@ class ViewController:
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
     }
     
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+    @IBAction func onSelectImage(_ sender: UITapGestureRecognizer) {
         nameTextField.resignFirstResponder()
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
+    
+    @IBAction func onTouchUpOutside(_ sender: UIButton) {
+    }
+    
 }
 
